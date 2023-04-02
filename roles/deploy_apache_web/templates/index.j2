@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apache2</title>
+</head>
+<body style="background-color: gold;">
+        <h1 style="color: black; text-align: center; padding-top: 100px;">Hello World!</h1><br>
+        <h2 style="color: black; text-align: center;">I am is Apache server! My name is: {{ serv_name }}</h2></br><br>
+
+	<h2 style="color: black; text-align: center;">Server Host Name: {{ ansible_hostname }}</h2><br> 
+	<h3 style="color: black; text-align: center;">Server OS Family is: {{ ansible_os_family }}</h3><br>
+	<h3 style="color: black; text-align: center;">Ip Addres of this Server is: {{ ansible_default_ipv4.address }}</h3><br>
+	
+</body>
+</html>
+
