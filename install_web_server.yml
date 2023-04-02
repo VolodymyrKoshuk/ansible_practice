@@ -1,0 +1,8 @@
+---
+
+- name: Install Apache and other web components and deploy Home Page
+  hosts: all
+  become: true
+
+  roles:
+    - deploy_apache_web
