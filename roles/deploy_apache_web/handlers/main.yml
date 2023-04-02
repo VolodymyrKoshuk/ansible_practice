@@ -3,4 +3,4 @@
 
 - name: Restart Apache for Debian
   service: name=apache2 state=restarted
-  when: ansible_of_family == "Debian"
+  when: ansible_os_family=="Debian"
