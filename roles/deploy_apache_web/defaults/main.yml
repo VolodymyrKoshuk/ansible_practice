@@ -1,3 +1,5 @@
 ---
 # defaults file for deploy_apache_web
 destin_folder: /var/www/html
+
+destin_conf_folder: /etc/apache2/sites-available

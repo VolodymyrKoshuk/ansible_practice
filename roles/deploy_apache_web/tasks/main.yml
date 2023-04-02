@@ -14,4 +14,11 @@
 
 - name: Generate page of apache server
   template: src=index.j2 dest={{ destin_folder }}/index.html mode=0755
+  notify:
+    - Restart Apache for Debian
+
+- name: Copy config file for apache server on 8080 port
+  copy: src=000-default.conf dest={{ destin_conf_folder }} mode=0755
+  notify:
+    - Restart Apache for Debian
 
